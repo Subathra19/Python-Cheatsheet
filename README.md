@@ -203,7 +203,7 @@ Basic Operations
 ----
 * dir() is a built-in function, used to return the list of the attributes and methods of any object.
 
-**Basic functions on Numeric data type**
+**Basic functions of Numeric data type**
 ```python
 pow(a,b)         # a**b
 abs(-a)          # a
@@ -231,7 +231,43 @@ len('subathra') # 8 --> Returns the number of characters in a string
 # String formatting
 'Hi {}, {}'.format('Subathra','Devi') # Hi Subathra devi
 ```
+**Basic functions of Lists**
+```python
+len(list) # Returns the number of elements in the list
+min(list) # Returns the minimum element of the list
+max(list) # Returns the maxiimum element of the list
+sum(list) # Returns the sum of all elements of the list
 
+#Add an element to the list
+list.append(<element>)          # Adds the element at the end of the list
+list.insert(position,<element>) # Adds the element at the given position of the list
+list.extend(list2)              # Extends the list and adds the values of list2
+
+new_list=list.copy # Copies the elements of list to new_list
+
+#Remove elements from the list
+list.pop()     # 3 --> Removes and return the last item of the list [mutates the original list]
+list.pop(1)    # 2 --> Removes and return the item of the list at position 1 [mutates the original list]
+list.remove(<element>) # Removes the specified element from the list
+list.clear() # Removes all the elements from the list
+
+#Ordering a list
+list.sort()             # Mutates the list where the elements of list are sorted in ascending order
+list.sort(reverse=True) # Mutates the list where the elements of list are sorted in descending order
+list.reverse() # Mutates the list where the position elements are reversed
+
+#Slicing of list
+#Acces a specific range of list using [start:end:step]
+a=[1, 2, 3, 4, 5]
+a[:3]  # [1, 2, 3] --> Access first three items of list
+a[-2:] # [4, 5] --> Access last two items of list
+a[1:4] # [2, 3, 4]
+
+#List Comprehension
+# To create a new list from other iterables like Tuple, strings, lists, etc.
+new_list = [ <action> for <item> in list if <condition>] 
+new_list = [ <action> if <condition> else <else block> for <item> in list] # Order should be maintained else wil get error
+```
 Credits
 ------
 Inspired by: https://github.com/gto76/python-cheatsheet
