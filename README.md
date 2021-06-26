@@ -348,7 +348,7 @@ else:
 
 Loops
 ----
-* **for loop:**
+**for loop**
 ```python
 # for loops are used for sequential search
 for <item> in sequence:
@@ -369,13 +369,13 @@ for i in my_dict.items():
     print(i) # ('Subathra', 123), ('Chinu', 456)
 ```
 
-* **while loop:**
+**while loop**
 ```python
 # Exexutes a block of statements repeatedly until the given condition fails 
 while condition:
   statements
 ```
-* **Loop control statements:
+**Loop control statements**
 ```python
 continue # Returns control to the begining of loop
 break    # Returns the control out of the loop
