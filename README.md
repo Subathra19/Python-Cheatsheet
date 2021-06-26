@@ -330,20 +330,20 @@ Conditionals
 if condition:           
    Statement1 # Executes if condition is True
 statement2 # Executes even if condition fails as it is outside if block
-
+```
+```python
 if condition:
     # This block gets executed if condition is True
 else:
     # This block gets executed if condition is False
-
+```
+```python
 if condition1:
     # This block gets executed if condition1 is True
 elif condition2:
     # This block gets executed if condition2 is True
 else:
-    # This block gets executed if both conditions are False
-    
-    
+    # This block gets executed if both conditions are False    
 ```
 
 Loops
