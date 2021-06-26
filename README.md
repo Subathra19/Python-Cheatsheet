@@ -226,35 +226,35 @@ len('subathra') # 8 --> Returns the number of characters in a string
 'Hello world'.find('o')    # 4 --> Returns the starting index position of the first occurrence
 'hello world'.startswith('hello') # True
 'hello world'.endswith('world')   # True
-''.join(list) # Join all the strings specified in the list with the character specified inside ""
+''.join(my_list) # Join all the strings specified in the list with the character specified inside ""
 
 # String formatting
 'Hi {}, {}'.format('Subathra','Devi') # Hi Subathra devi
 ```
 **Basic functions of Lists**
 ```python
-len(list) # Returns the number of elements in the list
-min(list) # Returns the minimum element of the list
-max(list) # Returns the maxiimum element of the list
-sum(list) # Returns the sum of all elements of the list
+len(my_list) # Returns the number of elements in the list
+min(my_list) # Returns the minimum element of the list
+max(my_list) # Returns the maxiimum element of the list
+sum(my_list) # Returns the sum of all elements of the list
 
 #Add an element to the list
-list.append(<element>)          # Adds the element at the end of the list
-list.insert(position,<element>) # Adds the element at the given position of the list
-list.extend(list2)              # Extends the list and adds the values of list2
+my_list.append(<element>)          # Adds the element at the end of the list
+my_list.insert(position,<element>) # Adds the element at the given position of the list
+my_list.extend(list2)              # Extends the list and adds the values of list2
 
 new_list=list.copy # Copies the elements of list to new_list
 
 #Remove elements from the list
-list.pop()     # 3 --> Removes and return the last item of the list [mutates the original list]
-list.pop(1)    # 2 --> Removes and return the item of the list at position 1 [mutates the original list]
-list.remove(<element>) # Removes the specified element from the list
-list.clear() # Removes all the elements from the list
+my_list.pop()     # 3 --> Removes and return the last item of the list [mutates the original list]
+my_list.pop(1)    # 2 --> Removes and return the item of the list at position 1 [mutates the original list]
+my_list.remove(<element>) # Removes the specified element from the list
+my_list.clear() # Removes all the elements from the list
 
 #Ordering a list
-list.sort()             # Mutates the list where the elements of list are sorted in ascending order
-list.sort(reverse=True) # Mutates the list where the elements of list are sorted in descending order
-list.reverse() # Mutates the list where the position elements are reversed
+my_list.sort()             # Mutates the list where the elements of list are sorted in ascending order
+my_list.sort(reverse=True) # Mutates the list where the elements of list are sorted in descending order
+my_list.reverse() # Mutates the list where the position elements are reversed
 
 #Slicing of list
 #Acces a specific range of list using [start:end:step]
@@ -265,8 +265,51 @@ a[1:4] # [2, 3, 4]
 
 #List Comprehension
 # To create a new list from other iterables like Tuple, strings, lists, etc.
-new_list = [ <action> for <item> in list if <condition>] 
-new_list = [ <action> if <condition> else <else block> for <item> in list] # Order should be maintained else wil get error
+new_list = [ <action> for <item> in my_list if <condition>] 
+new_list = [ <action> if <condition> else <else block> for <item> in my_list] # Order should be maintained else wil get error
+```
+**Basic functions of Tuples**
+```python
+len(my_tuple) # Returns the number of elements in the tuple
+my_tuple.index(<element>) # Returns the index of an element in tuple
+my_tuple.count(<element>) # Returns the number of occurrences of an element in tuple
+
+#Tuples are immutable--> we cannot add or remove elements from the tuple
+```
+**Basic functions of sets**
+```python
+#Add an element to the set
+my_set.add(<element1>, <element2>)  # {<element1>, <element2>} --> Adds elements to tle list
+my_set.add(<element1>)# {<element1>, <element2>} --> no duplicates
+
+#Removes the element from the ser
+my_set.remove(<element>)  # Removes the specified element from the set and creates an error if element not found
+my_set.discard(<element>) # Removes the specified element from the set and no error if element not found
+my_set.clear()            # Removes all the elements from the set
+
+set1.union(set2)        # Combines the elements of both sets into a new set and remove duplicates
+set1.intersection(set2) # Returns the elements that are common in both sets
+set1.difference(set2)   # Returns the elements that are not common in both sets
+set1.issubset(set2)     # Returns True if all the elements of set1 is present in set2
+set1.issuperset(set2)   # Returns True if all the elements of set2 is present in set1
+set1.isdisjoint(set2)   # Returns True if two sets have a null intersection.
+
+#ZIP() & UNZIP()
+# This function is used to map the similar index of multiple entities so that they can be used as a single entity.
+
+name = ["Subathra", "Chinu", "Pooja"]
+id = [59, 72, 35]
+location = ["India", "Japan", "UK"]
+ 
+# using zip() to map values
+a = zip(name, id, location) 
+# converting values to set
+set(a) # {('Chinu', 72, 'Japan'), ('Pooja', 35, 'UK'), ('Subathra', 59, 'India')}
+
+# To convert the zipped values back to the individual self as they were using * operator
+zipped=set(a)
+name, id, location = zip(*zipped)
+
 ```
 Credits
 ------
