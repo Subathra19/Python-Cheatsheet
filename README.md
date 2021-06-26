@@ -11,6 +11,7 @@
   * __[`None`](#none)__
 2. **Opeartors**
   * __[`Basic Operators`](#basic-operators)__
+  * __[`Basic Operations`](#basic-operations)__
 4. **Loops**
 5. **Functions**
 6. **Advanced Python**
@@ -198,6 +199,38 @@ not # Returns the reverse of the logical state of the operand
 <element> in <element>     # Returns true if value is found in the sequence
 <element> not in <element> # Returns true if value is not found in the sequence
 ```
+Basic Operations
+----
+* dir() is a built-in function, used to return the list of the attributes and methods of any object.
+
+**Basic functions on Numeric data type**
+```python
+pow(a,b)         # a**b
+abs(-a)          # a
+round(10.58)     # 10
+round(10.5935,2) # 10.59 --> round to 2nd digit
+bin(10)          # '0b1010' --> Returns the binary equivalent
+hex(512)         # '0xa' --> Returns the hexadecimal equivalent
+```
+**Basic functions of string**
+```python
+len('subathra') # 8 --> Returns the number of characters in a string
+# Basic Methods
+'I'm Subathra'.replace('Subathra', 'Chinu') # 'I'm Chinu' --> Replaces first parameter with second parameter
+'Hello world'.split()      # ['Hello', 'world']
+'hello world'.upper()      # HELLO WORLD --> Converts the string to upper case
+'HELLO WORLD'.lower()      # hello world --> Converts the string to lower case
+'hello world'.capitalize() # 'Hello world' --> Converts the first character of a string to upper case
+'hello world'.title()      # 'Hello World' --> Converts the first character of each word of a string to upper case
+'hello world'.index('d')   # 10 --> Returns the index of the given character
+'Hello world'.find('o')    # 4 --> Returns the starting index position of the first occurrence
+'hello world'.startswith('hello') # True
+'hello world'.endswith('world')   # True
+''.join(list) # Join all the strings specified in the list with the character specified inside ""
+# String formatting
+'Hi {}, {}'.format('Subathra','Devi') # Hi Subathra devi
+```
+
 Credits
 ------
 Inspired by: https://github.com/gto76/python-cheatsheet
