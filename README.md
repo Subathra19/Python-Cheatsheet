@@ -321,7 +321,7 @@ my_dict.pop(<key>)     # Removes the key and its corresponding value from the di
 ```
 
 ----
-## COnditionals and Loops
+## Conditionals and Loops
 
 Conditionals
 ----
