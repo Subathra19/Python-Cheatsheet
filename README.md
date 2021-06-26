@@ -10,24 +10,26 @@
   * __[`Dictionaries`](#dictionaries)__
   * __[`None`](#none)__
 2. **Opeartors**
-3. **Loops**
-4. **Functions**
-5. **Advanced Python**
+  * __[`Basic Operators`](#basic-operators)__
+4. **Loops**
+5. **Functions**
+6. **Advanced Python**
 
-
+## Data Types
+----
 Numeric Data Type
 ----
 * **It consists of int (integers), float (floating point numbers) and complex numbers**
 * **type() is used to determine the data type**
 ```python
-type(10) # int 
-type(-10) # int
+type(10)   # int 
+type(-10)  # int
 type(10.0) # float
 type(27.5) # float
 type(2+3J) # complex
 ```
 
-## Sequence Data Type
+### Sequence Data Type
 * **It is a ordered collection of similar or different data types**
 ----
 Strings
@@ -47,8 +49,8 @@ type('Hello World') # str
 * Characters in the string are accesed by indexing[]
 ```python
 name='subathra'
-name[4] # t
-name[0] # s
+name[4]  # t
+name[0]  # s
 name[-1] # a
 ```
 ![alt text](https://github.com/Subathra19/Python/blob/main/images/string.PNG)
@@ -58,7 +60,7 @@ Lists
 * **An ordered collection of different items.**
 * **Lists are mutable (i.e.) values can be changed during the course of program**
 ```python
-a = [] # Empty list
+a = []                           # Empty list
 a = [10, 20.1, "Hello"]
 a = [10, 20.1, "Hello", [1,5.2]] # Nested list
 ```
@@ -81,9 +83,9 @@ Tuples
 * **It ia also an ordered collection of different items.**
 * **But Tuples are immutable (i.e.) values can't be changed during the course of program**
 ```python
-a = () # Empty Tuple
-a = (1) # Not a Tuple
-a = (1,)# It is a tuple
+a = ()   # Empty Tuple
+a = (1)  # Not a Tuple
+a = (1,) # It is a tuple
 a = (10, 20.1, "Hello", (1, 5.2)) # Nested tuple
 ```
 
@@ -100,9 +102,9 @@ Boolean Data Type
 * **It has two built-in values: True or False**
 * **It is used in comparison and logical operations in Python**
 ```python
-type(True) #bool
-type(False) #bool
-type(true) # It is not a boolean data type. We get error
+type(True)  # bool
+type(False) # bool
+type(true)  # It is not a boolean data type. We get error
 ```
 
 Sets
@@ -110,9 +112,9 @@ Sets
 * **It is an unorderd collection of unique elements (i.e) no duplicate elements.**
 * **It is mutable**
 ```python
-a = set() # Empty set
-set(1,2,3)  # {1,2,3}
-set("subathra") # {'b', 't', 's', 'h', 'r', 'a', 'u'}
+a = set()               # Empty set
+set(1,2,3)              # {1,2,3}
+set("subathra")         # {'b', 't', 's', 'h', 'r', 'a', 'u'}
 set([1,2,"subathra",0]) # {0, 1, 2, 'subathra'} --> Integer followed by string
 ```
 
@@ -121,19 +123,58 @@ Dictionaries
 * **It is an ordered collection of data values. Stores the data values like a map.**
 * It holds key value pairs for optimization**
 ```python
-a = {} #Empty dictionary
+a = {}     #Empty dictionary
 a = {'Name':'Subathra','Id':32}
 a.values() # ['Subathra',32]
-a.keys() # ['Name','Id']
+a.keys()   # ['Name','Id']
 ```
 
 None
 ----
 **None is used to define a null value (i.e.) absence of a value**
 ```python
-a = None # nothing has been assigned
+a = None   # nothing has been assigned
 type(None) # NoneType
 ```
+## Operators
+----
+Basic Operators
+----
+**Arithmetic Operators**
+```python
++  # Adds two operands
+-  # Subtracts right operand from left operand.
+*  # Multuplies two operands
+/  # Divides left operand by hand operand and returns quotient
+%  # Divides left operand by hand operand and returns remainder
+** # Exponrntial operation (i.e.) returns first raised to power second
+// # Floor division (i.e.) divides left operand by hand operand and returns floor of quotient
+```
+**Comparison Operators**
+```python
+== # Both operands are equal
+!= # Both operands are not equal
+>  # Left operand is greater than right operand
+<  # Left operand is less than right operand
+>= # Left operand is greater than or equal to right operand
+<= # Left operand is less than or equal to right operand
+```
+**Logical Operators**
+```python
+and # returns true if both operands are true
+or  # returns true if either of the operands is true
+not # returns the reverse of the logical state of the operand
+```
+**Bitwise Operators**
+```python
+&	 # Bitwise AND	x & y
+|	 # Bitwise OR	x | y
+~	 # Bitwise NOT	~x
+^	 # Bitwise XOR	x ^ y
+>>	# Bitwise right shift	x>>
+<<	# Bitwise left shift	x<<
+```
+
 Credits
 ------
 Inspired by: https://github.com/gto76/python-cheatsheet
