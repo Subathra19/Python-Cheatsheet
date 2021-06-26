@@ -77,7 +77,7 @@ a[0] # 10
 # To access from nested list
 a[-1][0] # 1
 ```
-----
+
 Tuples
 ----
 * **It ia also an ordered collection of different items.**
