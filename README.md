@@ -143,7 +143,7 @@ Basic Operators
 **Arithmetic Operators**
 ```python
 +  # Adds two operands
--  # Subtracts right operand from left operand.
+-  # Subtracts right operand from left operand
 *  # Multuplies two operands
 /  # Divides left operand by hand operand and returns quotient
 %  # Divides left operand by hand operand and returns remainder
@@ -159,22 +159,43 @@ Basic Operators
 >= # Left operand is greater than or equal to right operand
 <= # Left operand is less than or equal to right operand
 ```
+
+**Assignment Operators**
+```python
+=   # Assigns values of right operand to left operand 
++=  # Adds both operand and assign the result to left operand
+-=  # Subtracts right operand from left operand and assign the result to left operand
+*=  # Multuplies two operands and assign the result to left operand
+/=  # Divides left operand by hand operand and assign the quotient to left operand
+%=  # Divides left operand by hand operand and assign the remainder to left operand
+**= # Performs exponential operation and assign the result to left operand
+//= # Performs floor division and assign the result to left operand
+```
 **Logical Operators**
 ```python
-and # returns true if both operands are true
-or  # returns true if either of the operands is true
-not # returns the reverse of the logical state of the operand
+and # Returns true if both operands are true
+or  # Returns true if either of the operands is true
+not # Returns the reverse of the logical state of the operand
 ```
 **Bitwise Operators**
 ```python
-&	 # Bitwise AND	x & y
-|	 # Bitwise OR	x | y
-~	 # Bitwise NOT	~x
-^	 # Bitwise XOR	x ^ y
->>	# Bitwise right shift	x>>
-<<	# Bitwise left shift	x<<
+&  # Bitwise AND
+|  # Bitwise OR
+~  # Bitwise NOT
+^  # Bitwise XOR
+>> # Bitwise right shift
+<< # Bitwise left shift
 ```
-
+**Identity Operators**
+```python
+<element> is <element>     # Returns true if both operands refer to same object in memory
+<element> is not <element> # Returns true if both operands does not refer to same object in memory
+```
+**Membership Operators**
+```python
+<element> in <element>     # Returns true if value is found in the sequence
+<element> not in <element> # Returns true if value is not found in the sequence
+```
 Credits
 ------
 Inspired by: https://github.com/gto76/python-cheatsheet
