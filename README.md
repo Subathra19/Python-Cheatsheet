@@ -46,7 +46,7 @@ type('Hello World') # str
 #To print single quote(') use \' or write it within double quotes
 'I\'m Subathra'
 "I'm Subathra"
-# Use triplr quotes to write multiple lines
+# Use triple quotes to write multiple lines
 '''Subathra
    Chinu'''
 ```
@@ -240,32 +240,32 @@ min(my_list) # Returns the minimum element of the list
 max(my_list) # Returns the maxiimum element of the list
 sum(my_list) # Returns the sum of all elements of the list
 
-#Add an element to the list
+# Add an element to the list
 my_list.append(<element>)          # Adds the element at the end of the list
 my_list.insert(position,<element>) # Adds the element at the given position of the list
 my_list.extend(list2)              # Extends the list and adds the values of list2
 
 new_list=list.copy # Copies the elements of list to new_list
 
-#Remove elements from the list
+# Remove elements from the list
 my_list.pop()     # 3 --> Removes and return the last item of the list [mutates the original list]
 my_list.pop(1)    # 2 --> Removes and return the item of the list at position 1 [mutates the original list]
 my_list.remove(<element>) # Removes the specified element from the list
 my_list.clear() # Removes all the elements from the list
 
-#Ordering a list
+# Ordering a list
 my_list.sort()             # Mutates the list where the elements of list are sorted in ascending order
 my_list.sort(reverse=True) # Mutates the list where the elements of list are sorted in descending order
 my_list.reverse() # Mutates the list where the position elements are reversed
 
-#Slicing of list
-#Acces a specific range of list using [start:end:step]
+# Slicing of list
+# Acces a specific range of list using [start:end:step]
 a=[1, 2, 3, 4, 5]
 a[:3]  # [1, 2, 3] --> Access first three items of list
 a[-2:] # [4, 5] --> Access last two items of list
 a[1:4] # [2, 3, 4]
 
-#List Comprehension
+# List Comprehension
 # To create a new list from other iterables like Tuple, strings, lists, etc.
 new_list = [ <action> for <item> in my_list if <condition>] 
 new_list = [ <action> if <condition> else <else block> for <item> in my_list] # Order should be maintained else wil get error
@@ -280,11 +280,11 @@ my_tuple.count(<element>) # Returns the number of occurrences of an element in t
 ```
 **Basic functions of sets**
 ```python
-#Add an element to the set
+# Add an element to the set
 my_set.add(<element1>, <element2>)  # {<element1>, <element2>} --> Adds elements to tle list
 my_set.add(<element1>)# {<element1>, <element2>} --> no duplicates
 
-#Removes the element from the ser
+# Removes the element from the ser
 my_set.remove(<element>)  # Removes the specified element from the set and creates an error if element not found
 my_set.discard(<element>) # Removes the specified element from the set and no error if element not found
 my_set.clear()            # Removes all the elements from the set
@@ -296,7 +296,7 @@ set1.issubset(set2)     # Returns True if all the elements of set1 is present in
 set1.issuperset(set2)   # Returns True if all the elements of set2 is present in set1
 set1.isdisjoint(set2)   # Returns True if two sets have a null intersection.
 
-#ZIP() & UNZIP()
+# ZIP() & UNZIP()
 # This function is used to map the similar index of multiple entities so that they can be used as a single entity.
 
 name = ["Subathra", "Chinu", "Pooja"]
@@ -348,8 +348,39 @@ else:
 
 Loops
 ----
+* **for loop:**
+```python
+# for loops are used for sequential search
+for <item> in sequence:
+    statements
+    
+# Loop over lists
+my_list = [10, 20, 30]
+for i in my_list:
+    print(i) # 10, 20, 30
 
+# Loop over dictionary items
+my_dict = {'Subathra': 123, 'Chinu': 456}
+for i in my_dict.keys():
+    print(i) # Subathra, Chinu 
+for i in my_dict.values():
+    print(i) # 123, 456
+for i in my_dict.items():
+    print(i) # ('Subathra', 123), ('Chinu', 456)
+```
 
+* **while loop:**
+```python
+# Exexutes a block of statements repeatedly until the given condition fails 
+while condition:
+  statements
+```
+* **Loop control statements:
+```python
+continue # Returns control to the begining of loop
+break    # Returns the control out of the loop
+pass     # To write empty loops, functions
+```
 
 
 Credits
