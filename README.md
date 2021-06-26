@@ -12,9 +12,11 @@
 2. **Opeartors**
   * __[`Basic Operators`](#basic-operators)__
   * __[`Basic Operations`](#basic-operations)__
-4. **Loops**
-5. **Functions**
-6. **Advanced Python**
+4. **Conditionals and Loops**
+  * __[`Conditionals`](#conditionals)__
+  * __[`Loops`](#loops)__   
+6. **Functions**
+7. **Advanced Python**
 ----
 ## Data Types
 
@@ -317,6 +319,39 @@ list(my_dict.keys())   # Creates a list with the keys of dictionary
 list(my_dict.values()) # Creates a list with the values of dictionary
 my_dict.pop(<key>)     # Removes the key and its corresponding value from the dictionary 
 ```
+
+----
+## COnditionals and Loops
+
+Conditionals
+----
+* These are the decision making statementsused to decides the flow of program execution.
+```python
+if condition:           
+   Statement1 # Executes if condition is True
+statement2 # Executes even if condition fails as it is outside if block
+
+if condition:
+    # This block gets executed if condition is True
+else:
+    # This block gets executed if condition is False
+
+if condition1:
+    # This block gets executed if condition1 is True
+elif condition2:
+    # This block gets executed if condition2 is True
+else:
+    # This block gets executed if both conditions are False
+    
+    
+```
+
+Loops
+----
+
+
+
+
 Credits
 ------
 Inspired by: https://github.com/gto76/python-cheatsheet
