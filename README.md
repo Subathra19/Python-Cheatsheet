@@ -136,6 +136,7 @@ None
 a = None   # nothing has been assigned
 type(None) # NoneType
 ```
+----
 ## Operators
 ----
 Basic Operators
