@@ -16,7 +16,7 @@
 6. **Advanced Python**
 
 ## Data Types
-----
+
 Numeric Data Type
 ----
 * **It consists of int (integers), float (floating point numbers) and complex numbers**
