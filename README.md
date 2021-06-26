@@ -14,7 +14,7 @@
 4. **Loops**
 5. **Functions**
 6. **Advanced Python**
-
+----
 ## Data Types
 
 Numeric Data Type
