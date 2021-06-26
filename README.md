@@ -31,7 +31,7 @@ type(2+3J) # complex
 
 ### Sequence Data Type
 * **It is a ordered collection of similar or different data types**
-----
+
 Strings
 ----
 * **It is a collection of one or sequence of characters in memory**
