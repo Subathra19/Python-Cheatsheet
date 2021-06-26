@@ -226,7 +226,7 @@ len('subathra') # 8 --> Returns the number of characters in a string
 'Hello world'.find('o')    # 4 --> Returns the starting index position of the first occurrence
 'hello world'.startswith('hello') # True
 'hello world'.endswith('world')   # True
-''.join(my_list) # Join all the strings specified in the list with the character specified inside ""
+''.join(my_list) # Join all the strings specified in the list with the character specified inside ''
 
 # String formatting
 'Hi {}, {}'.format('Subathra','Devi') # Hi Subathra devi
