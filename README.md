@@ -309,7 +309,13 @@ set(a) # {('Chinu', 72, 'Japan'), ('Pooja', 35, 'UK'), ('Subathra', 59, 'India')
 # To convert the zipped values back to the individual self as they were using * operator
 zipped=set(a)
 name, id, location = zip(*zipped)
-
+```
+**Basic functions of Dictionary**
+```python
+len(my_dict)           # Returns the number of key-pair values
+list(my_dict.keys())   # Creates a list with the keys of dictionary
+list(my_dict.values()) # Creates a list with the values of dictionary
+my_dict.pop(<key>)     # Removes the key and its corresponding value from the dictionary 
 ```
 Credits
 ------
