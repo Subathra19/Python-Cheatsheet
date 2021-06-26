@@ -1,7 +1,7 @@
 # Python-Cheatsheet
 
 # Contents
-----
+
 1. **Data Types:** 
   * __[`Numeric Data Type`](#numeric-data-type)__
   * Sequence Data Type:**__[`Strings`](#strings)__,__[`Lists`](#lists)__,__[`Tuples`](#tuples)__**
