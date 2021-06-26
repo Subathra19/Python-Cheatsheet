@@ -227,6 +227,7 @@ len('subathra') # 8 --> Returns the number of characters in a string
 'hello world'.startswith('hello') # True
 'hello world'.endswith('world')   # True
 ''.join(list) # Join all the strings specified in the list with the character specified inside ""
+
 # String formatting
 'Hi {}, {}'.format('Subathra','Devi') # Hi Subathra devi
 ```
