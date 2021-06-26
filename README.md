@@ -28,7 +28,7 @@ type(10.0) # float
 type(27.5) # float
 type(2+3J) # complex
 ```
-----
+
 ### Sequence Data Type
 
 * **It is a ordered collection of similar or different data types**
@@ -139,7 +139,7 @@ type(None) # NoneType
 ```
 ----
 ## Operators
-----
+
 Basic Operators
 ----
 **Arithmetic Operators**
