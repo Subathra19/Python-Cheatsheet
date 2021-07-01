@@ -57,7 +57,7 @@ name[4]  # t
 name[0]  # s
 name[-1] # a
 ```
-![alt text](https://github.com/Subathra19/Python/blob/main/images/string.PNG)
+![alt text](https://github.com/Subathra19/python-projects/blob/main/images/string.PNG)
 
 Lists
 ----
