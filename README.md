@@ -17,6 +17,7 @@
   * __[`Loops`](#loops)__   
 4. **Functions**
 5. **Advanced Python**
+
 ----
 ### 1. Data Types
 
