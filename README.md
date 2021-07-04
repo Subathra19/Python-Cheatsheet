@@ -12,13 +12,13 @@
 2. **Opeartors**
   * __[`Basic Operators`](#basic-operators)__
   * __[`Basic Operations`](#basic-operations)__
-4. **Conditionals and Loops**
+3. **Conditionals and Loops**
   * __[`Conditionals`](#conditionals)__
   * __[`Loops`](#loops)__   
-6. **Functions**
-7. **Advanced Python**
+4. **Functions**
+5. **Advanced Python**
 ----
-## Data Types
+## 1. Data Types
 
 Numeric Data Type
 ----
@@ -141,7 +141,7 @@ a = None   # nothing has been assigned
 type(None) # NoneType
 ```
 ----
-## Operators
+## 2. Operators
 
 Basic Operators
 ----
@@ -321,7 +321,7 @@ my_dict.pop(<key>)     # Removes the key and its corresponding value from the di
 ```
 
 ----
-## Conditionals and Loops
+## 3. Conditionals and Loops
 
 Conditionals
 ----
