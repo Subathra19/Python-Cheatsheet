@@ -1,6 +1,6 @@
 # Python-Cheatsheet
 
-# Contents
+## Contents
 
 1. **Data Types:** 
   * __[`Numeric Data Type`](#numeric-data-type)__
@@ -18,7 +18,7 @@
 4. **Functions**
 5. **Advanced Python**
 ----
-## 1. Data Types
+### 1. Data Types
 
 Numeric Data Type
 ----
@@ -141,7 +141,7 @@ a = None   # nothing has been assigned
 type(None) # NoneType
 ```
 ----
-## 2. Operators
+### 2. Operators
 
 Basic Operators
 ----
@@ -321,7 +321,7 @@ my_dict.pop(<key>)     # Removes the key and its corresponding value from the di
 ```
 
 ----
-## 3. Conditionals and Loops
+### 3. Conditionals and Loops
 
 Conditionals
 ----
